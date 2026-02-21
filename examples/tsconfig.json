@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"baseUrl": "..",
+		"paths": {
+			"@application/*": ["src/application/*"],
+			"@domain/*": ["src/domain/*"],
+			"@elsikora/cladi-testing": ["src/index.ts"],
+			"@infrastructure/*": ["src/infrastructure/*"],
+			"@presentation/*": ["src/presentation/*"]
+		}
+	},
+	"extends": "../tsconfig.json",
+	"include": ["./**/*.ts"]
+}
