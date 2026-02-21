@@ -16,15 +16,11 @@ describe("mockProvider", () => {
 	});
 
 	it("creates a factory provider for dynamic test doubles", () => {
-		const provider: Provider = mockProvider<string, [typeof ConfigToken]>(
-			ServiceToken,
-			(configValue: string): string => `dynamic:${configValue}`,
-			{
-				deps: [ConfigToken],
-				lifecycle: EDependencyLifecycle.TRANSIENT,
-				strategy: "factory",
-			},
-		);
+		const provider: Provider = mockProvider<string, [typeof ConfigToken]>(ServiceToken, (configValue: string): string => `dynamic:${configValue}`, {
+			deps: [ConfigToken],
+			lifecycle: EDependencyLifecycle.TRANSIENT,
+			strategy: "factory",
+		});
 
 		expect("useFactory" in provider).toBe(true);
 		if ("useFactory" in provider) {
