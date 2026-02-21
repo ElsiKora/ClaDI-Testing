@@ -1,6 +1,6 @@
 {
 	"name": "@elsikora/cladi-testing",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Testing utilities for ClaDI applications with clean architecture and explicit composition roots.",
 	"keywords": [
 		"cladi",
