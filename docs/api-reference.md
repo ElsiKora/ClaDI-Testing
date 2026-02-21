@@ -1,5 +1,9 @@
 # ClaDI Testing API Reference
 
+Compatibility:
+
+- `@elsikora/cladi-testing` requires `@elsikora/cladi >= 2.1.0`
+
 ## `createTestingContainer(options?)`
 
 Creates and configures a ClaDI container for tests.

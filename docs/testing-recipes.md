@@ -1,5 +1,11 @@
 # Testing Recipes
 
+## Prerequisites
+
+```bash
+npm install -D @elsikora/cladi @elsikora/cladi-testing
+```
+
 ## Recipe: deterministic value mocks
 
 ```ts

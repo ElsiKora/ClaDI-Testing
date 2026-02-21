@@ -1,5 +1,11 @@
 # Examples
 
+Install dependencies before running examples:
+
+```bash
+npm install
+```
+
 Run examples with:
 
 ```bash
