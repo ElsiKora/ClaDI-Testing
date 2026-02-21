@@ -20,15 +20,11 @@ describe("buildMockProvider", () => {
 	});
 
 	it("builds factory providers when strategy is factory", () => {
-		const provider: Provider = buildMockProvider<string, [typeof ConfigToken]>(
-			ServiceToken,
-			(configValue: string): string => `service:${configValue}`,
-			{
-				deps: [ConfigToken],
-				lifecycle: EDependencyLifecycle.SINGLETON,
-				strategy: "factory",
-			},
-		);
+		const provider: Provider = buildMockProvider<string, [typeof ConfigToken]>(ServiceToken, (configValue: string): string => `service:${configValue}`, {
+			deps: [ConfigToken],
+			lifecycle: EDependencyLifecycle.SINGLETON,
+			strategy: "factory",
+		});
 
 		expect("useFactory" in provider).toBe(true);
 		if ("useFactory" in provider) {

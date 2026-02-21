@@ -36,10 +36,7 @@ describe("composeTestingModules", () => {
 		Module({
 			exports: [ServiceToken],
 			name: "decorated-module",
-			providers: [
-				{ provide: ConfigToken, useValue: "decorated-config" },
-				Service,
-			],
+			providers: [{ provide: ConfigToken, useValue: "decorated-config" }, Service],
 		})(DecoratedModule);
 
 		const container: IDIContainer = createDIContainer();
