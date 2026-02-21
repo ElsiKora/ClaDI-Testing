@@ -358,7 +358,7 @@ import type { IDIContainer } from "@elsikora/cladi";
 
 const ServiceToken = createToken<string>("Service");
 
-describe("MyService", () => {
+describe("SomeService", () => {
   let container: IDIContainer;
 
   afterEach(async () => {
